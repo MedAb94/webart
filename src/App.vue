@@ -7,7 +7,7 @@
         dark
     >
       <v-layout class="justify-center align-center">
-        <h1 class="mr-4">LOGO</h1>
+        <v-img src="./assets/img/logo.jpeg" max-width="150" height=""/>
         <v-btn text class="link-item text-subtitle-1 mx-3">About Us</v-btn>
         <v-btn text class="link-item text-subtitle-1 mx-3">Our Services</v-btn>
         <v-btn text class="link-item text-subtitle-1 mx-3">Projects</v-btn>
