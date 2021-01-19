@@ -221,8 +221,8 @@ padding-bottom: 20px">
       <v-row justify="center" align="center">
         <v-col cols="12" sm="6" md="3">
           <div class="pa-2 text-center">
-            <h1>Logo</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet cum distinctio dolore
+            <v-img src="../assets/img/logo.jpeg" class="mb-3"/>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet cum distinctio dolore
               doloremque dolorum nulla numquam optio perferendis quasi quis rem sint vero, voluptatum. Culpa eius natus
               porro.</p>
           </div>
@@ -264,7 +264,7 @@ padding-bottom: 20px">
             <v-list class="transparent">
               <v-list-item>
                 <v-list-item-icon>
-                  <v-icon>mdi-person</v-icon>
+                  <v-icon>mdi-place</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>Avenue Dar Naim, <br> dar na3im</v-list-item-title>
               </v-list-item>
@@ -292,9 +292,11 @@ padding-bottom: 20px">
            <v-layout justify-end>
              <v-btn icon>
                <v-icon>mdi-facebook</v-icon>
-             </v-btn><v-btn icon>
+             </v-btn>
+             <v-btn icon class="mx-3">
                <v-icon>mdi-instagram</v-icon>
-             </v-btn><v-btn icon>
+             </v-btn>
+             <v-btn icon>
                <v-icon>mdi-twitter</v-icon>
              </v-btn>
            </v-layout>
