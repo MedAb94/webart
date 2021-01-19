@@ -221,7 +221,7 @@ padding-bottom: 20px">
       <v-row justify="center" align="center">
         <v-col cols="12" sm="6" md="3">
           <div class="pa-2 text-center">
-            <v-img src="../assets/img/logo.jpeg" class="mb-3"/>
+            <v-img src="../assets/img/logo.png" class="mb-3"/>
             <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet cum distinctio dolore
               doloremque dolorum nulla numquam optio perferendis quasi quis rem sint vero, voluptatum. Culpa eius natus
               porro.</p>
