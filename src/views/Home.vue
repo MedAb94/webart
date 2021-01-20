@@ -118,9 +118,9 @@
           <v-col cols="12" md="7">
             <v-card-title class="display-1 text-uppercase" style="color: #00baa0">instantaclass</v-card-title>
             <v-card-text>
-              <p class="title">Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Accusantium, aliquam cumque error minima natus rem similique suscipit unde
-                vel voluptatum?
+              <p class="title">Instantaclasse is a website of online courses which you can easily register and start to learn your favorite courses right away.
+ONLINE COURSES
+
                 <v-btn
                     text
                     class="primary float-right mt-4"
@@ -143,9 +143,8 @@
           <v-col cols="12" md="7">
             <v-card-title class="display-1 text-uppercase" style="color: #00baa0">gogivego</v-card-title>
             <v-card-text>
-              <p class="title">Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Accusantium, aliquam cumque error minima natus rem similique suscipit unde
-                vel voluptatum?
+              <p class="title">Gogivego is a classified website of items and services which you can easily register and start right away.
+
                 <v-btn
                     text
                     class="primary float-right mt-4"
@@ -166,11 +165,10 @@
             <v-img src="../assets/img/Group 10166@3x.png"></v-img>
           </v-col>
           <v-col cols="12" md="7">
-            <v-card-title class="display-1 text-uppercase" style="color: #00baa0">towogo</v-card-title>
+            <v-card-title class="display-1 text-uppercase" style="color: #00baa0">Towugo</v-card-title>
             <v-card-text>
-              <p class="title">Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Accusantium, aliquam cumque error minima natus rem similique suscipit unde
-                vel voluptatum?
+              <p class="title">Towugo is a website and mobile app which provide instantly road assistance to people by finding a towing near their location.
+
                 <v-btn
                     text
                     class="primary float-right mt-4"
