@@ -1,6 +1,6 @@
 <template>
   <v-app class="theme--dark">
-    <section class="pt-16 header">
+    <section class=" header">
       <v-layout fill-height column justify-center align-center>
         <h1 class="display-3 mb-2">Let's take <span class="text-primary">your brand</span> to the moon</h1>
         <p class="text-h5">We are team of talented designers</p>
@@ -8,30 +8,31 @@
         <v-btn text class="primary mt-4" width="250" rounded>start</v-btn>
       </v-layout>
     </section>
-    <section class="what-we-do">
-      <v-row class="">
-        <v-col cols="12" md="6" class="black_ black-col">
-          <h1 class="display-2" style="color: #00baa0">What We Do?</h1>
-          <h1 class="display-2" style="color: #ba7c00 !important;">we provide many information technology
-            information</h1>
-          <p class="text-h5 mt-4">we provide the best in IT services, Such as Web, App, Software, Photography, Graphics
-            and many more with
-            the most streamlined experience that guarantee satisfaction. We always use the latest technologies to
-            provide a brilliant user experience.
-          </p>
-          <v-btn text class="primary mt-4" rounded width="160">read more</v-btn>
+    <template class="">
+      <v-row class="what-we-do overflow-hidden">
+        <v-col cols="12" md="6">
+          <div class="black-col black_ pa-8">
+            <h1 class="display-2" style="color: #00baa0">What We Do?</h1>
+            <h1 class="display-2" style="color: #ba7c00 !important;">we provide many information technology
+              information</h1>
+            <p class="text-h5 mt-4">we provide the best in IT services, Such as Web, App, Software, Photography, Graphics
+              and many more with
+              the most streamlined experience that guarantee satisfaction. We always use the latest technologies to
+              provide a brilliant user experience.
+            </p>
+            <v-btn text class="primary mt-4" rounded width="160">read more</v-btn></div>
         </v-col>
-        <v-col class="bg">
-
+        <v-col md="6">
+          <div class="bg"></div>
         </v-col>
       </v-row>
-    </section>
-    <section class="services pa-16">
+    </template>
+    <section class="services pa-sm-9 pa-md-16">
       <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">Services</h1>
       <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">check out the great services <br> we
         offer</h1>
       <v-row justify="center" align="center" class="mt-4">
-        <v-col cols="12" md="6" lg="3" class="pa-5">
+        <v-col cols="12" md="6" lg="3" class="pa-2 pa-md-5">
           <v-card>
             <v-img
                 height="250"
@@ -48,7 +49,7 @@
             </v-layout>
           </v-card>
         </v-col>
-        <v-col cols="12" md="6" lg="3" class="pa-5">
+        <v-col cols="12" md="6" lg="3" class="pa-2 pa-md-5">
           <v-card>
             <v-img
                 height="250"
@@ -66,7 +67,7 @@
             </v-layout>
           </v-card>
         </v-col>
-        <v-col cols="12" md="6" lg="3" class="pa-5">
+        <v-col cols="12" md="6" lg="3" class="pa-2 pa-md-5">
           <v-card>
             <v-img
                 height="250"
@@ -84,7 +85,7 @@
             </v-layout>
           </v-card>
         </v-col>
-        <v-col cols="12" md="6" lg="3" class="pa-5">
+        <v-col cols="12" md="6" lg="3" class="pa-2 pa-md-5">
           <v-card>
             <v-img
                 height="250"
@@ -105,8 +106,7 @@
       </v-row>
     </section>
 
-    <section class="services black_" style="padding-top: 30px;
-padding-bottom: 20px">
+    <section class="services black_ mt-10" style="padding-top: 30px; padding-bottom: 20px">
       <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">Services</h1>
       <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">here are some projects <br> we
         did</h1>
@@ -193,17 +193,17 @@ padding-bottom: 20px">
 
     </section>
 
-    <section class="container pa-10">
-      <v-card class="black_  pa-10">
+    <section class="container pa-3  pa-md-10">
+      <v-card class="black_ pa-3  pa-md-10">
         <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">Contact</h1>
         <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">Contact us for any question or
           comments</h1>
-        <v-form class="pa-10">
+        <v-form class="pa-3 pa-md-10">
           <v-row>
-            <v-col>
+            <v-col cols="12" md="6">
               <v-text-field label="your name" placeholder="Enter your name here" outlined/>
             </v-col>
-            <v-col>
+            <v-col cols="12" md="6">
               <v-text-field type="email" label="E-Mail" placeholder="Enter your E-Mail here" outlined/>
             </v-col>
           </v-row>
@@ -216,90 +216,97 @@ padding-bottom: 20px">
         </v-form>
       </v-card>
     </section>
+
+    <!--    Footer-->
     <v-footer class="black_ pa-10">
       <v-container>
-      <v-row justify="center" align="center">
-        <v-col cols="12" sm="6" md="3">
-          <div class="pa-2 text-center">
-            <v-img src="../assets/img/logo.png" class="mb-3"/>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet cum distinctio dolore
-              doloremque dolorum nulla numquam optio perferendis quasi quis rem sint vero, voluptatum. Culpa eius natus
-              porro.</p>
-          </div>
-        </v-col>
-        <v-col cols="12" sm="6" md="3">
-          <div class="pa-2 text-center">
-            <h3>Quick links</h3>
-            <v-list class="transparent">
-              <v-list-item link>
-                <v-list-item-title>About Us</v-list-item-title>
-              </v-list-item><v-list-item link>
-                <v-list-item-title>Our Services</v-list-item-title>
-              </v-list-item>
-              <v-list-item link>
-                <v-list-item-title>Projects</v-list-item-title>
-              </v-list-item>
-              <v-list-item link>
-                <v-list-item-title>Contact</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </div>
-        </v-col>
-        <v-col cols="12" sm="6" md="3">
-          <div class="pa-2 text-center">
-            <v-list class="transparent">
-              <v-list-item link>
-                <v-list-item-title>Term & condition</v-list-item-title>
-              </v-list-item><v-list-item link>
-              <v-list-item-title>Privacy Policy</v-list-item-title>
-            </v-list-item>
-              <v-list-item link>
-                <v-list-item-title>FAQ</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </div>
-        </v-col><v-col cols="12" sm="6" md="3">
-          <div class="pa-2 text-center">
-            <h3>Contact Info</h3>
-            <v-list class="transparent">
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon>mdi-place</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>Avenue Dar Naim, <br> dar na3im</v-list-item-title>
-              </v-list-item>
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon>mdi-phone</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>+23 56787878</v-list-item-title>
-              </v-list-item>
-              <v-list-item>
-                <v-list-item-icon>
-                  <v-icon>mdi-email</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>exemple@contact.com</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </div>
-        </v-col>
-      </v-row>
+        <v-row justify="center" align="center">
+          <v-col cols="12" sm="6" md="3">
+            <div class="pa-2 text-center">
+              <v-img src="../assets/img/logo.png" class="mb-3"/>
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet cum
+                distinctio dolore
+                doloremque dolorum nulla numquam optio perferendis quasi quis rem sint vero, voluptatum. Culpa eius
+                natus
+                porro.</p>
+            </div>
+          </v-col>
+          <v-col cols="12" sm="6" md="3">
+            <div class="pa-2 text-center">
+              <h3>Quick links</h3>
+              <v-list class="transparent">
+                <v-list-item link>
+                  <v-list-item-title>About Us</v-list-item-title>
+                </v-list-item>
+                <v-list-item link>
+                  <v-list-item-title>Our Services</v-list-item-title>
+                </v-list-item>
+                <v-list-item link>
+                  <v-list-item-title>Projects</v-list-item-title>
+                </v-list-item>
+                <v-list-item link>
+                  <v-list-item-title>Contact</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </div>
+          </v-col>
+          <v-col cols="12" sm="6" md="3">
+            <div class="pa-2 text-center">
+              <v-list class="transparent">
+                <v-list-item link>
+                  <v-list-item-title>Term & condition</v-list-item-title>
+                </v-list-item>
+                <v-list-item link>
+                  <v-list-item-title>Privacy Policy</v-list-item-title>
+                </v-list-item>
+                <v-list-item link>
+                  <v-list-item-title>FAQ</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </div>
+          </v-col>
+          <v-col cols="12" sm="6" md="3">
+            <div class="pa-2 text-center">
+              <h3>Contact Info</h3>
+              <v-list class="transparent">
+                <v-list-item>
+                  <v-list-item-icon>
+                    <v-icon>mdi-location-on</v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-title>Avenue Dar Naim, <br> dar na3im</v-list-item-title>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-icon>
+                    <v-icon>mdi-phone</v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-title>+23 56787878</v-list-item-title>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-icon>
+                    <v-icon>mdi-email</v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-title>exemple@contact.com</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </div>
+          </v-col>
+        </v-row>
         <v-row class="justify-lg-space-between">
           <v-col cols="12" md="6" class="">
-           &copy; Lorem ipsum .all right are reserved
+            &copy; Lorem ipsum .all right are reserved
           </v-col>
           <v-col cols="12" md="6" class="">
-           <v-layout justify-end>
-             <v-btn icon>
-               <v-icon>mdi-facebook</v-icon>
-             </v-btn>
-             <v-btn icon class="mx-3">
-               <v-icon>mdi-instagram</v-icon>
-             </v-btn>
-             <v-btn icon>
-               <v-icon>mdi-twitter</v-icon>
-             </v-btn>
-           </v-layout>
+            <v-layout justify-end>
+              <v-btn icon>
+                <v-icon>mdi-facebook</v-icon>
+              </v-btn>
+              <v-btn icon class="mx-3">
+                <v-icon>mdi-instagram</v-icon>
+              </v-btn>
+              <v-btn icon>
+                <v-icon>mdi-twitter</v-icon>
+              </v-btn>
+            </v-layout>
           </v-col>
         </v-row>
       </v-container>
@@ -308,8 +315,6 @@ padding-bottom: 20px">
 </template>
 
 <script>
-
-
 export default {
   name: 'Home',
 }
@@ -324,12 +329,10 @@ $primary: #00baa0;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
   .text-primary {
     color: $primary !important;
   }
 }
-
 .what-we-do {
   .bg {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -337,25 +340,40 @@ $primary: #00baa0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 100%;
   }
-
   .black-col {
     position: relative;
     //padding-left: ;
-    padding: 50px;
+    //width: 100% !important;
   }
-
   .black-col::after {
     position: absolute;
     content: "";
-    height: auto;
     width: 100px;
     top: 0;
     bottom: 0;
     background: #1b1b1b;
     right: -60px;
-    transform: skewX(-7deg);
+    transform: skewX(-6deg);
+  }
+}
+@media screen and (max-width: 970px) {
+  .what-we-do {
+    .black-col::after {
+      display: none;
+    }
+    .bg {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 720px){
+  .display-1{
+    font-size: 1.9rem !important;
+  }
+  .display-2{
+    font-size: 2.3rem !important;
   }
 }
 </style>

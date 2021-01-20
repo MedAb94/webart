@@ -1,19 +1,39 @@
 <template>
   <v-app>
+    <v-navigation-drawer absolute temporary v-model="drawer">
+      <v-list-item link>
+          <v-img src="./assets/img/logo.png"></v-img>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list>
+        <v-list-item link>
+          <v-list-item-title>About Us</v-list-item-title>
+        </v-list-item><v-list-item link>
+          <v-list-item-title>Our Services</v-list-item-title>
+        </v-list-item><v-list-item link>
+          <v-list-item-title>Projects</v-list-item-title>
+        </v-list-item><v-list-item link>
+          <v-list-item-title>Contact</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
     <v-app-bar
         flat
         absolute
         class="transparent"
         dark
     >
-      <v-layout class="justify-center align-center">
-        <v-img src="./assets/img/logo.png" max-width="180" height=""/>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"/>
+      <v-img src="./assets/img/logo.png" max-width="150" height=""/>
+      <v-layout class="justify-center align-center hidden-sm-and-down">
         <v-btn text class="link-item text-subtitle-1 mx-3">About Us</v-btn>
         <v-btn text class="link-item text-subtitle-1 mx-3">Our Services</v-btn>
         <v-btn text class="link-item text-subtitle-1 mx-3">Projects</v-btn>
         <v-btn text class="link-item text-subtitle-1 mx-3">Contact</v-btn>
-        <v-btn text class="link-item text-subtitle-1 ml-4">EN</v-btn>
       </v-layout>
+
+      <v-spacer></v-spacer>
+      <v-btn text class="link-item text-subtitle-1 ml-4">EN</v-btn>
 
     </v-app-bar>
 
@@ -24,29 +44,25 @@
 </template>
 
 <script>
-
-
 export default {
   name: 'App',
-
   data: () => ({
-    //
+    drawer: false
   }),
 };
 </script>
 
 <style lang="scss">
-
 $primary: #00baa0;
-
+*{
+  box-sizing: border-box;
+}
 .v-toolbar__content {
   .link-item {
     color: #fff !important;
     font-weight: bold;
-    font-size: 35px !important;
     transition: all 0.5s ease-in-out;
   }
-
   .link-item:hover,
   .link-item:active {
     border-bottom: 2px solid $primary;
