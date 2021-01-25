@@ -1,377 +1,354 @@
 <template>
-  <v-app class="theme--dark">
-    <section class=" header">
-      <v-layout fill-height column justify-center align-center>
-        <h1 class="display-3 mb-2">Let's take <span class="text-primary">your brand</span> to the moon</h1>
-        <p class="text-h5">We are team of talented designers</p>
-        <p class="text-h5">making websites with best and newest technologies</p>
-        <v-btn text class="primary mt-4" width="250" rounded>start</v-btn>
-      </v-layout>
-    </section>
-    <template class="">
-      <v-row class="what-we-do overflow-hidden">
-        <v-col cols="12" md="6">
-          <div class="black-col black_ pa-8">
-            <h1 class="display-2" style="color: #00baa0">What We Do?</h1>
-            <h1 class="display-2" style="color: #ba7c00 !important;">we provide many information technology
-              information</h1>
-            <p class="text-h5 mt-4">we provide the best in IT services, Such as Web, App, Software, Photography, Graphics
-              and many more with
-              the most streamlined experience that guarantee satisfaction. We always use the latest technologies to
-              provide a brilliant user experience.
-            </p>
-            <v-btn text class="primary mt-4" rounded width="160">read more</v-btn></div>
-        </v-col>
-        <v-col md="6">
-          <div class="bg"></div>
-        </v-col>
-      </v-row>
-    </template>
-    <section class="services pa-sm-9 pa-md-16">
-      <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">Services</h1>
-      <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">check out the great services <br> we
-        offer</h1>
-      <v-row justify="center" align="center" class="mt-4">
-        <v-col cols="12" md="6" lg="3" class="pa-2 pa-md-5">
-          <v-card>
-            <v-img
-                height="250"
-                src="../assets/img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
-            ></v-img>
-
-            <v-card-title style="color: #ba7c00" class="text-center">Web Development</v-card-title>
-            <v-card-text>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae
-                exercitationem, illo magni nesciunt perferendis quod. Commodi explicabo ipsa provident.</p>
-            </v-card-text>
-            <v-layout class="pb-5">
-              <v-btn rounded text class="primary mx-auto ml-auto">view details</v-btn>
+    <v-app class="theme--dark">
+        <section class=" header">
+            <v-layout fill-height column justify-center align-center>
+                <h1 class="display-1 font-weight-bold mb-2 text-center">{{$t('hero.title')}}</h1>
+                <h1 class="mx-3 text-center">{{$t('hero.subtitle')}}</h1>
+                <v-btn text class="primary mt-4" width="250" rounded>{{$t('hero.soumission')}}</v-btn>
             </v-layout>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="6" lg="3" class="pa-2 pa-md-5">
-          <v-card>
-            <v-img
-                height="250"
-                src="../assets/img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
-            ></v-img>
+        </section>
+        <template class="">
+            <v-row class="what-we-do overflow-hidden">
+                <v-col cols="12" md="6">
+                    <div class="black-col black_ pa-8">
+                        <h1 class="display-2" style="color: #00baa0">{{$t('nav.about')}}</h1>
+                        <!--            <h1 class="display-2" style="color: #ba7c00 !important;">we provide many information technology-->
+                        <!--              information</h1>-->
+                        <p class="text-h5 mt-4">
+                            {{$t('about.title')}}
+                        </p>
+                        <h3 class="font-weight-bold">
+                            {{$t('about.offres.title')}}
+                        </h3>
 
-            <v-card-title style="color: #ba7c00" class="text-center">Mobile Development</v-card-title>
+                        <ul>
+                            <li>{{$t('about.offres.1')}}</li>
+                            <li>{{$t('about.offres.2')}}</li>
+                            <li>{{$t('about.offres.3')}}</li>
+                            <li>{{$t('about.offres.4')}}</li>
+                        </ul>
 
-            <v-card-text>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae
-                exercitationem, illo magni nesciunt perferendis quod. Commodi explicabo ipsa provident.</p>
-            </v-card-text>
-            <v-layout class="pb-5">
-              <v-btn rounded text class="primary mx-auto ml-auto">view details</v-btn>
-            </v-layout>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="6" lg="3" class="pa-2 pa-md-5">
-          <v-card>
-            <v-img
-                height="250"
-                src="../assets/img/headway-jfR5wu2hMI0-unsplash.jpg"
-            ></v-img>
+                    </div>
+                </v-col>
+                <v-col md="6">
+                    <div class="bg"></div>
+                </v-col>
+            </v-row>
+        </template>
+        <section class="services pa-sm-9 pa-md-16">
+            <h1 class=" text-center text-uppercase" style="color: #00baa0">{{$t('nav.services')}}</h1>
+            <v-row justify="center" align="stretch" class="mt-4">
+                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                    <v-card>
+                        <v-img
+                                height="250"
+                                src="../assets/img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+                        ></v-img>
+                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.1.title')}}
+                        </v-card-title>
+                        <v-card-text>
+                            <p class="text-center">{{$t('services.1.text')}}</p>
+                        </v-card-text>
 
-            <v-card-title style="color: #ba7c00" class="text-center">e-Commerce</v-card-title>
+                    </v-card>
+                </v-col>
+                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                    <v-card>
+                        <v-img
+                                height="250"
+                                src="../assets/img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
+                        ></v-img>
 
-            <v-card-text>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae
-                exercitationem, illo magni nesciunt perferendis quod. Commodi explicabo ipsa provident.</p>
-            </v-card-text>
-            <v-layout class="pb-5">
-              <v-btn rounded text class="primary mx-auto ml-auto">view details</v-btn>
-            </v-layout>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="6" lg="3" class="pa-2 pa-md-5">
-          <v-card>
-            <v-img
-                height="250"
-                src="../assets/img/sigmund-6jaBQAURBgI-unsplash.jpg"
-            ></v-img>
+                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.2.title')}}
+                        </v-card-title>
 
-            <v-card-title style="color: #ba7c00" class="text-center">Design</v-card-title>
+                        <v-card-text>
+                            <p class="text-center">{{$t('services.2.text')}}</p>
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                    <v-card>
+                        <v-img
+                                height="250"
+                                src="../assets/img/headway-jfR5wu2hMI0-unsplash.jpg"
+                        ></v-img>
 
-            <v-card-text>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae
-                exercitationem, illo magni nesciunt perferendis quod. Commodi explicabo ipsa provident.</p>
-            </v-card-text>
-            <v-layout class="pb-5">
-              <v-btn rounded text class="primary mx-auto ml-auto">view details</v-btn>
-            </v-layout>
-          </v-card>
-        </v-col>
-      </v-row>
-    </section>
+                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.3.title')}}
+                        </v-card-title>
 
-    <section class="services black_ mt-10" style="padding-top: 30px; padding-bottom: 20px">
-      <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">Services</h1>
-      <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">here are some projects <br> we
-        did</h1>
-      <div class="container py-6">
-        <v-row class="my-6">
-          <v-col cols="12" md="5">
-            <v-img src="../assets/img/Group 10166@3x.png"></v-img>
-          </v-col>
-          <v-col cols="12" md="7">
-            <v-card-title class="display-1 text-uppercase" style="color: #00baa0">instantaclass</v-card-title>
-            <v-card-text>
-              <p class="title">Instantaclasse is a website of online courses which you can easily register and start to learn your favorite courses right away.
-ONLINE COURSES
+                        <v-card-text>
+                            <p class="text-center">{{$t('services.3.text')}}</p>
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                    <v-card>
+                        <v-img
+                                height="250"
+                                src="../assets/img/sigmund-6jaBQAURBgI-unsplash.jpg"
+                        ></v-img>
 
-                <v-btn
-                    text
-                    class="primary float-right mt-4"
-                    rounded
-                    small
-                    width="150"
-                >
-                  visit website
-                </v-btn>
-              </p>
-            </v-card-text>
-          </v-col>
+                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.4.title')}}
+                        </v-card-title>
 
-        </v-row>
-        <hr class="primary">
-        <v-row class="my-6">
-          <v-col cols="12" md="5">
-            <v-img src="../assets/img/12.png"></v-img>
-          </v-col>
-          <v-col cols="12" md="7">
-            <v-card-title class="display-1 text-uppercase" style="color: #00baa0">gogivego</v-card-title>
-            <v-card-text>
-              <p class="title">Gogivego is a classified website of items and services which you can easily register and start right away.
+                        <v-card-text>
+                            <p class="text-center">{{$t('services.4.text')}}</p>
+                        </v-card-text>
+                    </v-card>
+                </v-col>
+                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                    <v-card>
+                        <v-img
+                                height="250"
+                                src="../assets/img/dashboard.jpeg"
+                        ></v-img>
 
-                <v-btn
-                    text
-                    class="primary float-right mt-4"
-                    rounded
-                    small
-                    width="150"
-                >
-                  visit website
-                </v-btn>
-              </p>
-            </v-card-text>
-          </v-col>
+                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.5.title')}}
+                        </v-card-title>
 
-        </v-row>
-        <hr class="primary">
-        <v-row class="my-6">
-          <v-col cols="12" md="5">
-            <v-img src="../assets/img/Group 10166@3x.png"></v-img>
-          </v-col>
-          <v-col cols="12" md="7">
-            <v-card-title class="display-1 text-uppercase" style="color: #00baa0">Towugo</v-card-title>
-            <v-card-text>
-              <p class="title">Towugo is a website and mobile app which provide instantly road assistance to people by finding a towing near their location.
+                        <v-card-text>
+                            <p class="text-center">{{$t('services.5.text')}}</p>
+                        </v-card-text>
+                    </v-card>
+                </v-col>
 
-                <v-btn
-                    text
-                    class="primary float-right mt-4"
-                    rounded
-                    small
-                    width="150"
-                >
-                  visit website
-                </v-btn>
-              </p>
-            </v-card-text>
-          </v-col>
+            </v-row>
+        </section>
+        <section class="services black_ mt-10" style="padding-top: 30px; padding-bottom: 20px">
+            <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">{{$t('nav.projects')}}</h1>
+            <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">{{$t('projects.title')}}</h1>
+            <div class="container py-6">
+                <v-row class="my-6">
+                    <v-col cols="12" md="5">
+                        <v-img src="../assets/img/Group 10166@3x.png"></v-img>
+                    </v-col>
+                    <v-col cols="12" md="7">
+                        <v-card-title class="display-1 text-uppercase" style="color: #00baa0">{{$t('projects.1.title')}}
+                        </v-card-title>
+                        <v-card-text>
+                            <p class="title">{{$t('projects.1.text')}}
 
-        </v-row>
+                                <v-btn
+                                        text
+                                        class="primary float-right mt-4"
+                                        rounded
+                                        small
+                                        width="150"
+                                >
+                                    {{$t('projects.visit')}}
+                                </v-btn>
+                            </p>
+                        </v-card-text>
+                    </v-col>
 
-        <v-layout justify-center class="mt-6">
-          <v-btn text rounded class="primary" width="150">View More</v-btn>
-        </v-layout>
-      </div>
+                </v-row>
+                <hr class="primary">
+                <v-row class="my-6">
+                    <v-col cols="12" md="5">
+                        <v-img src="../assets/img/12.png"></v-img>
+                    </v-col>
+                    <v-col cols="12" md="7">
+                        <v-card-title class="display-1 text-uppercase" style="color: #00baa0">
+                            {{$t('projects.2.title')}}
+                        </v-card-title>
+                        <v-card-text>
+                            <p class="title">{{$t('projects.2.text')}}
 
-    </section>
+                                <v-btn
+                                        text
+                                        class="primary float-right mt-4"
+                                        rounded
+                                        small
+                                        width="150"
+                                >
+                                    {{$t('projects.visit')}}
+                                </v-btn>
+                            </p>
+                        </v-card-text>
+                    </v-col>
 
-    <section class="container pa-3  pa-md-10">
-      <v-card class="black_ pa-3  pa-md-10">
-        <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">Contact</h1>
-        <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">Contact us for any question or
-          comments</h1>
-        <v-form class="pa-3 pa-md-10">
-          <v-row>
-            <v-col cols="12" md="6">
-              <v-text-field label="your name" placeholder="Enter your name here" outlined/>
-            </v-col>
-            <v-col cols="12" md="6">
-              <v-text-field type="email" label="E-Mail" placeholder="Enter your E-Mail here" outlined/>
-            </v-col>
-          </v-row>
-          <v-text-field label="Subject" placeholder="Type Your Subject Here" outlined/>
-          <v-textarea label="Subject" placeholder="Type Your Message Here" outlined/>
+                </v-row>
+                <hr class="primary">
+                <v-row class="my-6">
+                    <v-col cols="12" md="5">
+                        <v-img src="../assets/img/Group 10166@3x.png"></v-img>
+                    </v-col>
+                    <v-col cols="12" md="7">
+                        <v-card-title class="display-1 text-uppercase" style="color: #00baa0">
+                            {{$t('projects.3.title')}}
+                        </v-card-title>
+                        <v-card-text>
+                            <p class="title">{{$t('projects.3.text')}}
+                                <v-btn
+                                        text
+                                        class="primary float-right mt-4"
+                                        rounded
+                                        small
+                                        width="150"
+                                >
+                                    {{$t('projects.visit')}}
+                                </v-btn>
+                            </p>
+                        </v-card-text>
+                    </v-col>
 
-          <v-layout justify-center>
-            <v-btn class="primary" rounded text width="150">send</v-btn>
-          </v-layout>
-        </v-form>
-      </v-card>
-    </section>
-
-    <!--    Footer-->
-    <v-footer class="black_ pa-10">
-      <v-container>
-        <v-row justify="center" align="center">
-          <v-col cols="12" sm="6" md="3">
-            <div class="pa-2 text-center">
-              <v-img src="../assets/img/logo.png" class="mb-3"/>
-              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam amet cum
-                distinctio dolore
-                doloremque dolorum nulla numquam optio perferendis quasi quis rem sint vero, voluptatum. Culpa eius
-                natus
-                porro.</p>
+                </v-row>
             </div>
-          </v-col>
-          <v-col cols="12" sm="6" md="3">
-            <div class="pa-2 text-center">
-              <h3>Quick links</h3>
-              <v-list class="transparent">
-                <v-list-item link>
-                  <v-list-item-title>About Us</v-list-item-title>
-                </v-list-item>
-                <v-list-item link>
-                  <v-list-item-title>Our Services</v-list-item-title>
-                </v-list-item>
-                <v-list-item link>
-                  <v-list-item-title>Projects</v-list-item-title>
-                </v-list-item>
-                <v-list-item link>
-                  <v-list-item-title>Contact</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </div>
-          </v-col>
-          <v-col cols="12" sm="6" md="3">
-            <div class="pa-2 text-center">
-              <v-list class="transparent">
-                <v-list-item link>
-                  <v-list-item-title>Term & condition</v-list-item-title>
-                </v-list-item>
-                <v-list-item link>
-                  <v-list-item-title>Privacy Policy</v-list-item-title>
-                </v-list-item>
-                <v-list-item link>
-                  <v-list-item-title>FAQ</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </div>
-          </v-col>
-          <v-col cols="12" sm="6" md="3">
-            <div class="pa-2 text-center">
-              <h3>Contact Info</h3>
-              <v-list class="transparent">
-                <v-list-item>
-                  <v-list-item-icon>
-                    <v-icon>mdi-location-on</v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-title>Avenue Dar Naim, <br> dar na3im</v-list-item-title>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-icon>
-                    <v-icon>mdi-phone</v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-title>+23 56787878</v-list-item-title>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-icon>
-                    <v-icon>mdi-email</v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-title>exemple@contact.com</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </div>
-          </v-col>
-        </v-row>
-        <v-row class="justify-lg-space-between">
-          <v-col cols="12" md="6" class="">
-            &copy; Lorem ipsum .all right are reserved
-          </v-col>
-          <v-col cols="12" md="6" class="">
-            <v-layout justify-end>
-              <v-btn icon>
-                <v-icon>mdi-facebook</v-icon>
-              </v-btn>
-              <v-btn icon class="mx-3">
-                <v-icon>mdi-instagram</v-icon>
-              </v-btn>
-              <v-btn icon>
-                <v-icon>mdi-twitter</v-icon>
-              </v-btn>
-            </v-layout>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-footer>
-  </v-app>
+
+        </section>
+
+        <section class="container pa-3  pa-md-10">
+            <v-card class="black_ pa-3  pa-md-10">
+                <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">{{$t('nav.contact')}}</h1>
+                <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">Contact us for any question or
+                    comments</h1>
+                <v-form class="pa-3 pa-md-10">
+
+                    <v-text-field :label="$t('contact.name')" placeholder="Enter your name here" outlined/>
+                    <v-text-field type="email" label="E-Mail"  outlined/>
+                    <v-text-field :label="$t('contact.phone')"  outlined/>
+                    <v-text-field :label="$t('contact.subject')" outlined/>
+                    <v-textarea label="Message" outlined/>
+                    <v-layout justify-center>
+                        <v-btn class="primary" rounded text width="150">{{$t('contact.send')}}</v-btn>
+                    </v-layout>
+                </v-form>
+            </v-card>
+        </section>
+
+        <!--    Footer-->
+        <v-footer class="black_ pa-10">
+            <v-container>
+                <v-row justify="center" align="center">
+                    <v-col cols="12" sm="6" md="3">
+                        <div class="pa-2 text-center">
+                            <v-img src="../assets/img/logo.png" class="mb-3"/>
+                            <p class="">Les projets web qui repondent à vos besoins</p>
+                        </div>
+                    </v-col>
+                    <v-col cols="12" sm="6" md="3">
+                        <div class="pa-2 text-center">
+                            <h3>Quick links</h3>
+                            <v-list class="transparent">
+                                <v-list-item link>
+                                    <v-list-item-title>About Us</v-list-item-title>
+                                </v-list-item>
+                                <v-list-item link>
+                                    <v-list-item-title>Our Services</v-list-item-title>
+                                </v-list-item>
+                            </v-list>
+                        </div>
+                    </v-col>
+                    <v-col cols="12" sm="6" md="3">
+                        <div class="pa-2 text-center">
+                            <v-list class="transparent">
+                              <v-list-item link>
+                                <v-list-item-title>Projects</v-list-item-title>
+                              </v-list-item>
+                              <v-list-item link>
+                                <v-list-item-title>Contact</v-list-item-title>
+                              </v-list-item>
+                            </v-list>
+                        </div>
+                    </v-col>
+                    <v-col cols="12" sm="6" md="3">
+                        <div class="pa-2 text-center">
+                            <h3>Contact Info</h3>
+                            <v-list class="transparent">
+                                <v-list-item>
+                                    <v-list-item-icon>
+                                        <v-icon>mdi-phone</v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-title>514-865-8488</v-list-item-title>
+                                </v-list-item>
+                                <v-list-item>
+                                    <v-list-item-icon>
+                                        <v-icon>mdi-email</v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-title>info@sitewebart.ca</v-list-item-title>
+                                </v-list-item>
+                            </v-list>
+                        </div>
+                    </v-col>
+                </v-row>
+                <v-row class="justify-lg-space-between">
+                    <v-col cols="12"  class="text-center">
+                        &copy;SITEWEBART .all right are reserved
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-footer>
+    </v-app>
 </template>
 
 <script>
-export default {
-  name: 'Home',
-}
+    export default {
+        name: 'Home',
+    }
 </script>
 
 <style lang="scss" scoped>
-$primary: #00baa0;
-.header {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  url("../assets/img/domenico-loia-hGV2TfOh0ns-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  .text-primary {
-    color: $primary !important;
-  }
-}
-.what-we-do {
-  .bg {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../assets/img/campaign-creators-iEiUITs149M-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-  }
-  .black-col {
-    position: relative;
-    //padding-left: ;
-    //width: 100% !important;
-  }
-  .black-col::after {
-    position: absolute;
-    content: "";
-    width: 100px;
-    top: 0;
-    bottom: 0;
-    background: #1b1b1b;
-    right: -60px;
-    transform: skewX(-6deg);
-  }
-}
-@media screen and (max-width: 970px) {
-  .what-we-do {
-    .black-col::after {
-      display: none;
+    $primary: #00baa0;
+    .header {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../assets/img/domenico-loia-hGV2TfOh0ns-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+
+        .text-primary {
+            color: $primary !important;
+        }
     }
-    .bg {
-      display: none;
+
+    .what-we-do {
+        .bg {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url("../assets/img/campaign-creators-iEiUITs149M-unsplash.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .black-col {
+            position: relative;
+            //padding-left: ;
+            //width: 100% !important;
+        }
+
+        .black-col::after {
+            position: absolute;
+            content: "";
+            width: 100px;
+            top: 0;
+            bottom: 0;
+            background: #1b1b1b;
+            right: -60px;
+            transform: skewX(-6deg);
+        }
     }
-  }
-}
-@media screen and (max-width: 720px){
-  .display-1{
-    font-size: 1.9rem !important;
-  }
-  .display-2{
-    font-size: 2.3rem !important;
-  }
-}
+
+    @media screen and (max-width: 970px) {
+        .what-we-do {
+            .black-col::after {
+                display: none;
+            }
+
+            .bg {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        .display-1 {
+            font-size: 1.9rem !important;
+        }
+        .display-2 {
+            font-size: 2.3rem !important;
+        }
+    }
 </style>

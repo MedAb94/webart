@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "about": "A PROPOS",
+    "services": "NOS SERVICES",
+    "projects": "PROJETS",
+    "contact": "CONTACTEZ-NOUS"
+  },
+  "hero": {
+    "title": "CONCEPTION DE SITES WEB ET APPLICATIONS MOBILES PROFESSIONNELLES.",
+    "subtitle": "Nous offrons des services adaptés à vos besoin et à des prix concurrentiels.",
+    "soumission": "SOUMISSION GRATUITE"
+  },
+  "about": {
+    "title": "Chez SITEWEBART nous sommes des passionnés du web et pouvons vous aider à réaliser le projet de votre rêve. Petit ou gros projet, que ce soit pour un site web, un appli mobile pour votre entreprise ou pour un projet personnel vous pouvez compter sur notre expertise. Nous utilisons les dernières technologies disponibles sur le marché, pour concevoir des projets qui donnent une bonne expérience à nos clients et ce à des prix compétitifs.",
+    "offres": {
+      "title": "Offres spéciales pour un temps limité:",
+      "1": "Conception de logo gratuit.",
+      "2": "Conception graphique gratuit avec révisions illimités.",
+      "3": "Nom de domaine et hébergement web gratuits pour une durée de 1 an.",
+      "4": "Maintenance gratuite pendant 3 mois."
+    }
+  },
+  "services": {
+    "1": {
+      "title": "CONCEPTION GRAPHIQUE",
+      "text": "Nous créons des logos et maquettes attrayantes selon vos requis et les faisons valider par vous dans le but d’arriver à un résultat à la hauteur de votre image."
+    },
+    "2": {
+      "title": "DEVELOPPEMENT SITES WEB",
+      "text": "ecrire texte par vous"
+    },
+    "3": {
+      "title": "DEVELOPPEMENT APPLICATION MOBILE",
+      "text": "ecrire texte par vous"
+    },
+    "4": {
+      "title": "COMMERCE ÉLECTRONIQUE",
+      "text": "Lorsque votre projet inclut des transactions monétaires en ligne, nous pouvons installer un système de transactions sécuritaires avec tous les types de paiements disponibles sur le marché."
+    },
+    "5": {
+      "title": "TABLEAU DE BORD ADMINISTRATIF PERSONNALISÉ",
+      "text": "Dans le but de mieux visualiser et gérer les diverses activités se déroulant sur votre site web ou application mobile, nous pouvons créer un tableau de bord personnalisé, vous permettant par exemple de visualiser la liste de commandes passées ou en cours, ajouter, supprimer des produits du menu, changer les prix, interagir avec vos clients, etc."
+    }
+
+  },
+  "projects": {
+    "title": "Voici quelques-unes de nos réalisations:",
+    "visit": "Visiter le site web",
+    "1": {
+      "title": "INSTANTACLASSE",
+      "text": "Site web d'apprentissage de cours en ligne."
+    },
+    "2": {
+      "title": "GOGIVEGO",
+      "text": "Site web permettant de vendre, donner ou échanger des objets et services."
+    },
+    "3": {
+      "title": "TOWUGO",
+      "text": "Site Web et application mobile fournissant instantanément une assistance routière en cas d'accident ou bris de véhicules."
+    }
+
+  },
+  "contact": {
+    "name": "Nom",
+    "subject": "Objet",
+    "phone": "Telephone (optionel)",
+    "send": "Envoyer"
+
+  }
+}

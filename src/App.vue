@@ -7,13 +7,13 @@
       <v-divider></v-divider>
       <v-list>
         <v-list-item link>
-          <v-list-item-title>About Us</v-list-item-title>
+          <v-list-item-title>{{$t('nav.about')}}</v-list-item-title>
         </v-list-item><v-list-item link>
-          <v-list-item-title>Our Services</v-list-item-title>
+          <v-list-item-title>{{$t('nav.services')}}</v-list-item-title>
         </v-list-item><v-list-item link>
-          <v-list-item-title>Projects</v-list-item-title>
+          <v-list-item-title>{{$t('nav.projects')}}</v-list-item-title>
         </v-list-item><v-list-item link>
-          <v-list-item-title>Contact</v-list-item-title>
+          <v-list-item-title>{{$t('nav.contact')}}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -26,14 +26,15 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"/>
       <v-img src="./assets/img/logo.png" max-width="150" height=""/>
       <v-layout class="justify-center align-center hidden-sm-and-down">
-        <v-btn text class="link-item text-subtitle-1 mx-3">About Us</v-btn>
-        <v-btn text class="link-item text-subtitle-1 mx-3">Our Services</v-btn>
-        <v-btn text class="link-item text-subtitle-1 mx-3">Projects</v-btn>
-        <v-btn text class="link-item text-subtitle-1 mx-3">Contact</v-btn>
+        <v-btn text class="link-item text-subtitle-1 mx-3">{{$t('nav.about')}}</v-btn>
+        <v-btn text class="link-item text-subtitle-1 mx-3">{{$t('nav.services')}}</v-btn>
+        <v-btn text class="link-item text-subtitle-1 mx-3">{{$t('nav.projects')}}</v-btn>
+        <v-btn text class="link-item text-subtitle-1 mx-3">{{$t('nav.contact')}}</v-btn>
       </v-layout>
 
       <v-spacer></v-spacer>
-      <v-btn text class="link-item text-subtitle-1 ml-4">EN</v-btn>
+      <v-btn text class="link-item text-subtitle-1 ml-4" @click="$i18n.locale='en'" v-if="$i18n.locale === 'fr'">EN</v-btn>
+      <v-btn text class="link-item text-subtitle-1 ml-4" @click="$i18n.locale='fr'" v-if="$i18n.locale === 'en'">FR</v-btn>
 
     </v-app-bar>
 

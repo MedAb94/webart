@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "about": "ABOUT US",
+    "services": "OUR SERVICES",
+    "projects": "PROJECTS",
+    "contact": "CONTACT US"
+  },
+  "hero": {
+    "title": "CREATION OF PROFESSIONAL WEBSITES AND MOBILE APPLICATIONS.",
+    "subtitle": "We offer services tailored to your needs at competitive prices.",
+    "soumission": "FREE QUOTE"
+  },
+  "about": {
+    "title": "At SITEWEBART we are web passionate, we can realize the project of your dream. Small or large project, whether for a website, a mobile app, for your business or a personal project, you can count on our expertise. We use the latest technologies available on the market, in order to create projects that give a good experience to our customers at competitive prices.",
+    "offres": {
+      "title": "Special offers for a limited time:",
+      "1": "Free logo design.",
+      "2": "Free graphic design with unlimited revisions.",
+      "3": "Free domain name and web hosting for 1 year.",
+      "4": "Free maintenance for 3 months."
+    }
+  },
+  "services": {
+    "1": {
+      "title": "GRAPHIC DESIGN",
+      "text": "We create attractive logos and graphic mockups according to your requirements and we get them validated by you, in order to obtain a satisfying result."
+    },
+    "2": {
+      "title": "WEBSITE DEVELOPMENT",
+      "text": "ecrire texte par vous"
+    },
+    "3": {
+      "title": "MOBILE APP DEVELOPMENT",
+      "text": "ecrire texte par vous"
+    },
+    "4": {
+      "title": "E-COMMERCE",
+      "text": "When your project includes online monetary transactions, we can set up a secure transaction system with all types of payments available on the market."
+    },
+    "5": {
+      "title": "PERSONALIZED ADMINISTRATIVE DASHBOARD",
+      "text": "In order to better visualize and manage various activities taking place on your website or mobile app, we can create a personalized dashboard, allowing you for example to view the list of past or current orders, add or delete products menu, change prices, interact with your customers, etc."
+    }
+
+  },
+  "projects": {
+    "title": "Here are some of our achievements:",
+    "visit": "Visit website",
+    "1": {
+      "title": "INSTANTACLASSE",
+      "text": "Online course learning website."
+    },
+    "2": {
+      "title": "GOGIVEGO",
+      "text": "Website for selling, giving or exchanging items and services."
+    },
+    "3": {
+      "title": "TOWUGO",
+      "text": "Website and mobile app that provide instant roadside assistance in the event of an accident or vehicle breakdown."
+    }
+
+  },
+  "contact": {
+    "name": "Name",
+    "subject": "Subject",
+    "phone": "Phone (optional)",
+    "send": "Send"
+  }
+}
