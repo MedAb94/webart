@@ -4,11 +4,11 @@
             <v-layout fill-height column justify-center align-center>
                 <h1 class="display-1 font-weight-bold mb-2 text-center">{{$t('hero.title')}}</h1>
                 <h1 class="mx-3 text-center">{{$t('hero.subtitle')}}</h1>
-                <v-btn text class="primary mt-4" width="250" rounded>{{$t('hero.soumission')}}</v-btn>
+                <v-btn text class="primary mt-4" width="250" rounded to="#contact" v-smooth-scroll>{{$t('hero.soumission')}}</v-btn>
             </v-layout>
         </section>
         <template class="">
-            <v-row class="what-we-do overflow-hidden">
+            <v-row class="what-we-do overflow-hidden" id="about">
                 <v-col cols="12" md="6">
                     <div class="black-col black_ pa-8">
                         <h1 class="display-2" style="color: #00baa0">{{$t('nav.about')}}</h1>
@@ -35,7 +35,7 @@
                 </v-col>
             </v-row>
         </template>
-        <section class="services pa-sm-9 pa-md-16">
+        <section id="services" class="services pa-sm-9 pa-md-16">
             <h1 class=" text-center text-uppercase" style="color: #00baa0">{{$t('nav.services')}}</h1>
             <v-row justify="center" align="stretch" class="mt-4">
                 <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
@@ -115,7 +115,7 @@
 
             </v-row>
         </section>
-        <section class="services black_ mt-10" style="padding-top: 30px; padding-bottom: 20px">
+        <section id="projects" class="services black_ mt-10" style="padding-top: 30px; padding-bottom: 20px">
             <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">{{$t('nav.projects')}}</h1>
             <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">{{$t('projects.title')}}</h1>
             <div class="container py-6">
@@ -172,7 +172,7 @@
                 <hr class="primary">
                 <v-row class="my-6">
                     <v-col cols="12" md="5">
-                        <v-img src="../assets/img/Group 10166@3x.png"></v-img>
+                        <v-img src="../assets/img/12.png"></v-img>
                     </v-col>
                     <v-col cols="12" md="7">
                         <v-card-title class="display-1 text-uppercase" style="color: #00baa0">
@@ -197,8 +197,7 @@
             </div>
 
         </section>
-
-        <section class="container pa-3  pa-md-10">
+        <section id="contact" class="container pa-3  pa-md-10">
             <v-card class="black_ pa-3  pa-md-10">
                 <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">{{$t('nav.contact')}}</h1>
                 <h1 class="display-1 text-center text-capitalize" style="color: #ba7c00">Contact us for any question or
