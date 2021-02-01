@@ -4,7 +4,9 @@
             <v-layout fill-height column justify-center align-center>
                 <h1 class="display-1 font-weight-bold mb-2 text-center">{{$t('hero.title')}}</h1>
                 <h1 class="mx-3 text-center">{{$t('hero.subtitle')}}</h1>
-                <v-btn text class="primary mt-4" width="250" rounded to="#contact" v-smooth-scroll>{{$t('hero.soumission')}}</v-btn>
+              <a href="#contact" v-smooth-scroll>
+                <v-btn text class="primary mt-4" width="250" rounded>{{$t('hero.soumission')}}</v-btn>
+              </a>
             </v-layout>
         </section>
         <template class="">
@@ -135,6 +137,8 @@
                                         rounded
                                         small
                                         width="150"
+                                        href="https://instantaclasse.ca/"
+                                        target="_blank"
                                 >
                                     {{$t('projects.visit')}}
                                 </v-btn>
@@ -146,7 +150,7 @@
                 <hr class="primary">
                 <v-row class="my-6">
                     <v-col cols="12" md="5">
-                        <v-img src="../assets/img/12.png"></v-img>
+                        <v-img src="../assets/img/gogive.png"></v-img>
                     </v-col>
                     <v-col cols="12" md="7">
                         <v-card-title class="display-1 text-uppercase" style="color: #00baa0">
@@ -161,6 +165,8 @@
                                         rounded
                                         small
                                         width="150"
+                                        href="https://gogivego.com/en/"
+                                        target="_blank"
                                 >
                                     {{$t('projects.visit')}}
                                 </v-btn>
@@ -186,6 +192,8 @@
                                         rounded
                                         small
                                         width="150"
+                                        href="https://mobile-sigma.vercel.app"
+                                        target="_blank"
                                 >
                                     {{$t('projects.visit')}}
                                 </v-btn>
@@ -215,7 +223,19 @@
                 </v-form>
             </v-card>
         </section>
-
+      <v-btn
+          v-scroll="onScroll"
+          v-show="fab"
+          fab
+          dark
+          fixed
+          bottom
+          right
+          color="primary"
+          @click="toTop"
+      >
+        <v-icon>mdi-chevron-up </v-icon>
+      </v-btn>
         <!--    Footer-->
         <v-footer class="black_ pa-10">
             <v-container>
@@ -223,7 +243,6 @@
                     <v-col cols="12" sm="6" md="3">
                         <div class="pa-2 text-center">
                             <v-img src="../assets/img/logo.png" class="mb-3"/>
-                            <p class="">Les projets web qui repondent à vos besoins</p>
                         </div>
                     </v-col>
                     <v-col cols="12" sm="6" md="3">
@@ -284,6 +303,35 @@
 <script>
     export default {
         name: 'Home',
+      data: () => ({
+        fab: false,
+        valid: true,
+        name: '',
+        nameRules: [
+          v => !!v || this.$i18n.locale === 'fr' ? 'Veillez saisir votre nom' : 'Name is required',
+        ],
+        email: '',
+        emailRules: [
+          v => !!v || this.$i18n.locale === 'fr' ? 'Veillez saisir votre couriel' : 'Email is required',
+          v => /.+@.+\..+/.test(v) || 'E-mail Invalide',
+        ],
+        select: null,
+      }),
+
+      methods: {
+        validate() {
+          this.$refs.form.validate()
+        },
+        onScroll(e) {
+          if (typeof window === 'undefined') return
+          const top = window.pageYOffset || e.target.scrollTop || 0
+          this.fab = top > 20
+        },
+        toTop() {
+          this.$vuetify.goTo(0)
+        }
+
+      },
     }
 </script>
 
