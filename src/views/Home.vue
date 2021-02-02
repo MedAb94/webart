@@ -9,7 +9,7 @@
               </a>
             </v-layout>
         </section>
-        <template class="">
+        <v-container>
             <v-row class="what-we-do overflow-hidden" id="about">
                 <v-col cols="12" md="6">
                     <div class="black-col black_ pa-8">
@@ -36,86 +36,89 @@
                     <div class="bg"></div>
                 </v-col>
             </v-row>
-        </template>
+        </v-container>
         <section id="services" class="services pa-sm-9 pa-md-16">
             <h1 class=" text-center text-uppercase" style="color: #00baa0">{{$t('nav.services')}}</h1>
-            <v-row justify="center" align="stretch" class="mt-4">
-                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
-                    <v-card>
-                        <v-img
-                                height="250"
-                                src="../assets/img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
-                        ></v-img>
-                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.1.title')}}
-                        </v-card-title>
-                        <v-card-text>
-                            <p class="text-center">{{$t('services.1.text')}}</p>
-                        </v-card-text>
+           <v-container>
+             <v-row justify="center" align="stretch" class="mt-4">
+               <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                 <v-card>
+                   <v-img
+                       height="250"
+                       src="../assets/img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+                   ></v-img>
+                   <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.1.title')}}
+                   </v-card-title>
+                   <v-card-text>
+                     <p class="text-center">{{$t('services.1.text')}}</p>
+                   </v-card-text>
 
-                    </v-card>
-                </v-col>
-                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
-                    <v-card>
-                        <v-img
-                                height="250"
-                                src="../assets/img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
-                        ></v-img>
+                 </v-card>
+               </v-col>
+               <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                 <v-card>
+                   <v-img
+                       height="250"
+                       src="../assets/img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
+                   ></v-img>
 
-                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.2.title')}}
-                        </v-card-title>
+                   <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.2.title')}}
+                   </v-card-title>
 
-                        <v-card-text>
-                            <p class="text-center">{{$t('services.2.text')}}</p>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
-                    <v-card>
-                        <v-img
-                                height="250"
-                                src="../assets/img/headway-jfR5wu2hMI0-unsplash.jpg"
-                        ></v-img>
+                   <v-card-text>
+                     <p class="text-center">{{$t('services.2.text')}}</p>
+                   </v-card-text>
+                 </v-card>
+               </v-col>
+               <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                 <v-card>
+                   <v-img
+                       height="250"
+                       src="../assets/img/headway-jfR5wu2hMI0-unsplash.jpg"
+                   ></v-img>
 
-                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.3.title')}}
-                        </v-card-title>
+                   <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.3.title')}}
+                   </v-card-title>
 
-                        <v-card-text>
-                            <p class="text-center">{{$t('services.3.text')}}</p>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
-                    <v-card>
-                        <v-img
-                                height="250"
-                                src="../assets/img/sigmund-6jaBQAURBgI-unsplash.jpg"
-                        ></v-img>
+                   <v-card-text>
+                     <p class="text-center">{{$t('services.3.text')}}</p>
+                   </v-card-text>
+                 </v-card>
+               </v-col>
+               <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                 <v-card>
+                   <v-img
+                       height="250"
+                       src="../assets/img/sigmund-6jaBQAURBgI-unsplash.jpg"
+                   ></v-img>
 
-                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.4.title')}}
-                        </v-card-title>
+                   <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.4.title')}}
+                   </v-card-title>
 
-                        <v-card-text>
-                            <p class="text-center">{{$t('services.4.text')}}</p>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
-                <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
-                    <v-card>
-                        <v-img
-                                height="250"
-                                src="../assets/img/dashboard.jpeg"
-                        ></v-img>
+                   <v-card-text>
+                     <p class="text-center">{{$t('services.4.text')}}</p>
+                   </v-card-text>
+                 </v-card>
+               </v-col>
+               <v-col cols="12" md="6" lg="4" class="pa-2 pa-md-5 d-flex">
+                 <v-card>
+                   <v-img
+                       height="250"
+                       src="../assets/img/dashboard.jpeg"
+                   ></v-img>
 
-                        <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.5.title')}}
-                        </v-card-title>
+                   <v-card-title style="color: #ba7c00" class="text-center">{{$t('services.5.title')}}
+                   </v-card-title>
 
-                        <v-card-text>
-                            <p class="text-center">{{$t('services.5.text')}}</p>
-                        </v-card-text>
-                    </v-card>
-                </v-col>
+                   <v-card-text>
+                     <p class="text-center">{{$t('services.5.text')}}</p>
+                   </v-card-text>
+                 </v-card>
+               </v-col>
 
-            </v-row>
+             </v-row>
+           </v-container>
+
         </section>
         <section id="projects" class="services black_ mt-10" style="padding-top: 30px; padding-bottom: 20px">
             <h1 class="display-2 text-center text-uppercase" style="color: #00baa0">{{$t('nav.projects')}}</h1>
